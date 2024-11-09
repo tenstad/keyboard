@@ -5,6 +5,7 @@
 **_Hand-soldered ergonomic split 3x6 keyboard with 5 thumb keys_**
 
 Designed for the [RP2040 Zero](https://circuitpython.org/board/waveshare_rp2040_zero/) and [Kailh Choc](https://kailhswitch.net/products/kailh-low-profile-mechanical-keyboard-switch-brown-red-white-switch-for-diy-gaming-keyboard-mx-switches) low profile key switches.
+Check it out in the [QMK Configurator](https://config.qmk.fm/#/handwired/tenstad/LAYOUT_split_3x6_5).
 
 ## Model
 
