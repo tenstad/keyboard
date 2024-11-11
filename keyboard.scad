@@ -397,7 +397,7 @@ difference() {
     brd_h = 1.3;
     brd_back = 1.65;
     
-    usb_r = 1;
+    usb_r = 1.25;
     usb_w = 9.3;
     usb_h = 3.4;
     usb_d = 0.6;
@@ -435,6 +435,7 @@ difference() {
                 cube([brd_back + 0.001, brd_l-2, brd_w-2]);
             }
             translate([usb_h/2+1, -2, brd_w/2]) {
+                $fn=50;
                 rotate([-90, -90, 0]) {
                     translate([-(usb_w-2*usb_r)/2, -usb_h/2, 0]) {
                         cube([usb_w-2*usb_r, usb_h, 15]);
