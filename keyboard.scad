@@ -413,25 +413,18 @@ difference() {
         }
     }
     union() {
-        $fn=100;
         translate([-11, 18.4, 10]) {
             rotate([30, 90, 0]) {
+                $fn=50;
                 cylinder(h=7, r=4);
             }
         }
         
         translate([4,69.5, 1]) {
-            $fn=100;
-            for (i=[0, 1, 2]) {
-                translate([-2.2,-brd_l-2, brd_w/2+i*3.6]) {
-                    rotate([0, 90, 0]) {
-                        cylinder(h=10, r=1.4);
-                    }
-                }
-                translate([-2.2,-brd_l-2, brd_w/2-i*3.6]) {
-                    rotate([0, 90, 0]) {
-                        cylinder(h=10, r=1.4);
-                    }
+            translate([-2.2,-brd_l-2, brd_w/2]) {
+                rotate([0, 90, 0]) {
+                    $fn=50;
+                    cylinder(h=10, r=1.4);
                 }
             }
             
